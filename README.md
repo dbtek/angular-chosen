@@ -128,11 +128,12 @@ evaluates to `undefined` while your data is loading!
 ```
 **Script**  
 ```js
-angular.module('App', ['ngResource', 'ngChosen'])
+angular.module('App', ['ngChosen'])
 .controller('StateCtrl', function($scope) {
     $scope.states = ['Alaska','Arizona','Arkansas','California'];
 
     $scope.chosenChangeHandler = function chosenChangeHandler(val) {
+        // set model
         $scope.chosenSearchTerm = val;
     }
 });

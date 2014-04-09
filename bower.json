@@ -1,7 +1,7 @@
 {
   "name": "angular-chosen",
   "main": "angular-chosen.js",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "homepage": "https://github.com/dbtek/angular-chosen",
   "authors": [
     "İsmail Demirbilek <ce.demirbilek@gmail.com>"

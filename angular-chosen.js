@@ -64,9 +64,10 @@
           } else {
             chosen = element.chosen(options).data('chosen');
             // bind input change handler
-            $('.chosen-drop .chosen-search input').on('input', function(scope){
-              options.input_change_handler($(this).val());
-            });
+            if(options.input_change_handler)
+              $('.chosen-drop .chosen-search input').on('input', function(scope){
+                options.input_change_handler($(this).val());
+              });
             return defaultText = chosen.default_text;
           }
         };
